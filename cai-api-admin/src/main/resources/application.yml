@@ -27,14 +27,9 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/caiapi
-    username: root
-    password: root
-  # Elasticsearch 配置
-  # todo 需替换配置，然后取消注释
-  #  elasticsearch:
-  #    uris: http://localhost:9200
-  #    username: root
-  #    password: 123456
+    username: 
+    password: 
+
   # 文件上传
   servlet:
     multipart:
@@ -62,10 +57,10 @@ mybatis-plus:
 # 对象存储
 aliyun:
   oss:
-    endpoint: oss-cn-heyuan.aliyuncs.com
-    accessKeyId: LTAI5tNKp6qXeTvq2yehaGv8
-    accessKeySecret: teUyZvvNh9gXtbQZiq2c8mEgBi7voM
-    bucketName: cai-api-project
+    endpoint:
+    accessKeyId: 
+    accessKeySecret: 
+    bucketName: 
 
 
 
@@ -81,4 +76,4 @@ dubbo:
     port: -1
   registry:
     id: nacos-registry
-    address: nacos://172.17.0.2:8848
+    address: nacos://0.0.0.0:8848
